@@ -124,7 +124,7 @@
 
     </div>
 
-    <div class="modal-wrapper ">
+    <div class="modal-wrapper show">
         <div class="modal-form">
             <div class="form-title">
                 <span>Register</span>
@@ -137,10 +137,9 @@
             <div class="data-type-buttons">
                 <input class="btn tel active" type="button" value="Via telefone">
                 <input class="btn mail" type="button" value="Via e-mail">
-
             </div>
 
-            <form action="POST" class="form">
+            <form class="form">
 
                 <div class="input-wrapper">
                     <span>Enter phone number</span>
@@ -152,6 +151,8 @@
                     <input type="email" name="email" id="email">
                 </div>
 
+                <button action="submit" class="submit">GET BONUS</button>
+                <button class="thnx hide">Thanks</button>
 
                 <div class="checks">
                     <div class="check">
@@ -186,25 +187,25 @@
     <script>
         const inpt = document.querySelector("#phone");
         window.intlTelInput(inpt, {
+            preferredCountries: ['us', 'gb'],
             // allowDropdown: false,
             // autoHideDialCode: false,
             // autoPlaceholder: "off",
             // dropdownContainer: document.body,
             // excludeCountries: ["us"],
             // formatOnDisplay: false,
-          /*   geoIpLookup: function (callback) {
-                $.get("http://ipinfo.io", function () {}, "jsonp").always(function (resp) {
-                    var countryCode = (resp && resp.country) ? resp.country : "";
-                    callback(countryCode);
-                });
-            }, */
+            /*   geoIpLookup: function (callback) {
+                  $.get("http://ipinfo.io", function () {}, "jsonp").always(function (resp) {
+                      var countryCode = (resp && resp.country) ? resp.country : "";
+                      callback(countryCode);
+                  });
+              }, */
             // hiddenInput: "full_number",
             // initialCountry: "auto",
             // localizedCountries: { 'de': 'Deutschland' },
             // nationalMode: false,
             // onlyCountries: ['us', 'gb', 'ch', 'ca', 'do'],
             // placeholderNumberType: "MOBILE",
-            // preferredCountries: ['cn', 'jp'],
             // separateDialCode: true,
             utilsScript: "build/js/utils.js",
         });

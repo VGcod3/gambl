@@ -8,9 +8,22 @@ const emailWrapper = document.querySelector('.email-wrapper')
 const telInput = inputWrapper.querySelector('#phone')
 const mailInput = inputWrapper.querySelector('#email')
 const dropdown = document.querySelector('.iti')
-const body = document.body
+const body = document.body;
 
+const sbmt = document.querySelector('.submit')
+const thnx = document.querySelector('.thnx')
+const form = document.querySelector('form')
 
+sbmt.addEventListener('click', (e) => {
+    e.preventDefault();
+
+    sentModal()
+})
+
+form.addEventListener('submit', e => {
+    e.preventDefault();
+
+})
 
 btns.forEach(btn => btn.addEventListener('click', (e) => {
     btns.forEach(b => b.classList.remove('active'))
@@ -33,4 +46,14 @@ function modalToggle() {
     inputWrapper.classList.toggle('hide')
     emailWrapper.classList.toggle('hide')
     body.classList.toggle('noScroll')
+}
+
+function sentModal() {
+    thnx.classList.remove('hide')
+    sbmt.classList.add('hide')
+
+    document.querySelector('.checks').classList.add('hide')
+    document.querySelector('.input-wrapper').classList.add('hide')
+    document.querySelector('.email-wrapper').classList.add('hide')
+    document.querySelector('.data-type-buttons').classList.add('hide')
 }
