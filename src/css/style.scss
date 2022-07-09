@@ -729,6 +729,7 @@ img {
 
 .hide {
     display: none !important;
+    visibility: hidden;
     z-index: 0;
     width: 0 !important;
     height: 0 !important;

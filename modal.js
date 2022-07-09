@@ -6,7 +6,7 @@ const inputWrapper = document.querySelector('.input-wrapper')
 const emailWrapper = document.querySelector('.email-wrapper')
 
 const telInput = inputWrapper.querySelector('#phone')
-const mailInput = inputWrapper.querySelector('#email')
+const mailInput = emailWrapper.querySelector('#email')
 const dropdown = document.querySelector('.iti')
 const body = document.body;
 
@@ -15,13 +15,16 @@ const thnx = document.querySelector('.thnx')
 const form = document.querySelector('form')
 
 sbmt.addEventListener('click', (e) => {
-    e.preventDefault();
+    // e.preventDefault();
 
-    sentModal()
+    // sentModal()
 })
 
 form.addEventListener('submit', e => {
     e.preventDefault();
+
+
+    sentModal()
 
 })
 
@@ -45,10 +48,12 @@ btns.forEach(btn => btn.addEventListener('click', (e) => {
 function modalToggle() {
     inputWrapper.classList.toggle('hide')
     emailWrapper.classList.toggle('hide')
-    body.classList.toggle('noScroll')
+    body.classList.add('noScroll')
 }
 
 function sentModal() {
+
+    if (!telInput.value && !mailInput.value) return;
     thnx.classList.remove('hide')
     sbmt.classList.add('hide')
 

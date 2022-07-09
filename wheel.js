@@ -60,6 +60,8 @@
     const showModal = () => {
         const modalForm = document.querySelector('.modal-wrapper');
         modalForm.classList.add('show')
+        // const socialForm = document.querySelector('.social-wrapper');
+        // socialForm.classList.add('show')
     }
 
     const handleWin = (actualDeg) => {
