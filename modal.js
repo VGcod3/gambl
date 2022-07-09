@@ -10,8 +10,6 @@ const mailInput = inputWrapper.querySelector('#email')
 const dropdown = document.querySelector('.iti')
 const body = document.body
 
-console.log(body);
-
 
 
 btns.forEach(btn => btn.addEventListener('click', (e) => {
