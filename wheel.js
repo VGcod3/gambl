@@ -27,7 +27,6 @@
         let arr = str.split(' ');
 
         let res = arr.map(word => {
-            console.log(typeof word);
 
             if (!isNaN(+word)) {
                 return `<span class="number">${word}</span>`
@@ -35,8 +34,6 @@
             return word;
 
         }).join(' ');
-
-        console.log(res);
 
         return res;
     }

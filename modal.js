@@ -8,6 +8,9 @@ const emailWrapper = document.querySelector('.email-wrapper')
 const telInput = inputWrapper.querySelector('#phone')
 const mailInput = inputWrapper.querySelector('#email')
 const dropdown = document.querySelector('.iti')
+const body = document.body
+
+console.log(body);
 
 
 
@@ -19,13 +22,17 @@ btns.forEach(btn => btn.addEventListener('click', (e) => {
     }
 
     if (e.target.classList.contains('tel')) {
-        inputWrapper.classList.toggle('hide')
-        emailWrapper.classList.toggle('hide')
+        modalToggle()
     }
 
     if (e.target.classList.contains('mail')) {
-        inputWrapper.classList.toggle('hide')
-        emailWrapper.classList.toggle('hide')
+        modalToggle()
     }
 
 }))
+
+function modalToggle() {
+    inputWrapper.classList.toggle('hide')
+    emailWrapper.classList.toggle('hide')
+    body.classList.toggle('noScroll')
+}
