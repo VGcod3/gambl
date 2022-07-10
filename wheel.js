@@ -2,7 +2,7 @@
     const wheel = document.querySelector('.wheel')
     const startButton = document.querySelector('.button')
 
-    const body = document.body;
+    const body = document.querySelector('.wrapper');
 
     const inputWrapper = document.querySelector('.input-wrapper')
     const emailWrapper = document.querySelector('.email-wrapper')
