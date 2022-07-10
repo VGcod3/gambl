@@ -1,6 +1,13 @@
 (function () {
-    const wheel = document.querySelector('.wheel');
-    const startButton = document.querySelector('.button');
+    const wheel = document.querySelector('.wheel')
+    const startButton = document.querySelector('.button')
+
+    const body = document.body;
+
+    const inputWrapper = document.querySelector('.input-wrapper')
+    const emailWrapper = document.querySelector('.email-wrapper')
+
+
 
     let deg = 0;
     let spins = 2;
@@ -62,6 +69,11 @@
         modalForm.classList.add('show')
         // const socialForm = document.querySelector('.social-wrapper');
         // socialForm.classList.add('show')
+
+        body.classList.add('noScroll')
+        inputWrapper.classList.add('scroll')
+        emailWrapper.classList.add('scroll')
+
     }
 
     const handleWin = (actualDeg) => {

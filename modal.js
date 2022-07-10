@@ -8,7 +8,6 @@ const emailWrapper = document.querySelector('.email-wrapper')
 const telInput = inputWrapper.querySelector('#phone')
 const mailInput = emailWrapper.querySelector('#email')
 const dropdown = document.querySelector('.iti')
-const body = document.body;
 
 const sbmt = document.querySelector('.submit')
 const thnx = document.querySelector('.thnx')
@@ -48,7 +47,6 @@ btns.forEach(btn => btn.addEventListener('click', (e) => {
 function modalToggle() {
     inputWrapper.classList.toggle('hide')
     emailWrapper.classList.toggle('hide')
-    body.classList.add('noScroll')
 }
 
 function sentModal() {

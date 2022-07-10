@@ -736,5 +736,9 @@ img {
 }
 
 .noScroll {
-    overflow: hidden;
+    overflow: hidden !important;
+}
+
+.scroll {
+    overflow-y: auto !important;
 }
