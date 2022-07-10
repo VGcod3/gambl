@@ -71,7 +71,7 @@ img {
   overflow: hidden;
 }
 .wrapper #wheel .button {
-  position: fixed;
+  position: absolute;
   left: auto;
   bottom: auto;
   width: 80px;
@@ -87,7 +87,7 @@ img {
   z-index: 3;
 }
 .wrapper .man {
-  position: fixed;
+  position: absolute;
   bottom: 0;
   left: -20px;
   width: 120px;
@@ -97,7 +97,7 @@ img {
   width: 100%;
 }
 .wrapper .woman {
-  position: fixed;
+  position: absolute;
   bottom: 0;
   right: -20px !important;
   width: 100px;
