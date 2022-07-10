@@ -9,7 +9,7 @@ body {
     // min-height: 680px;
 }
 div {
-            box-sizing: border-box;
+    box-sizing: border-box !important;
 
 }
 
@@ -61,7 +61,7 @@ img {
     .logo {
         width: 100%;
         position: absolute;
-        top: 10vh;
+        top: 5vh;
         left: 0;
 
         display: flex;
@@ -132,7 +132,7 @@ img {
         position: absolute;
 
         bottom: 0;
-        right: -20px !important;
+        right: 0;
         // right: 0;
 
         width: 100px;
@@ -148,7 +148,7 @@ img {
 
 .popup-left {
     left: 5%;
-    bottom: 38%;
+    bottom: 45%;
 }
 
 .popup-right {
@@ -161,15 +161,15 @@ img {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
-    // min-height: 680px;
+    height: fit-content ;
+    min-height: 100% !important;
+
+    overflow: auto;
 
     box-sizing: border-box;
 
     visibility: hidden;
     opacity: 0;
-
-    overflow: auto;
 
     animation: all 3s ease;
     animation-delay: 250ms;
