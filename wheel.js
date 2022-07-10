@@ -7,6 +7,10 @@
     const inputWrapper = document.querySelector('.input-wrapper')
     const emailWrapper = document.querySelector('.email-wrapper')
 
+    const modalSocial = document.querySelector('.social-wrapper')
+    const modalForm = document.querySelector('.modal-wrapper');
+
+
 
     let deg = 0;
     let spins = 2;
@@ -62,12 +66,9 @@
         prize.innerHTML = wrapNumber(symbolSegments[winningSymbolNr])
     }
 
-
     const showModal = () => {
-        // const modalForm = document.querySelector('.modal-wrapper');
-        // modalForm.classList.add('show')
-        const modalSocial = document.querySelector('.modal-social');
-        modalSocial.classList.add('show')
+        modalForm.classList.add('show')
+        // modalSocial.classList.add('show')
 
         body.classList.add('noScroll')
     }

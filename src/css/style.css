@@ -370,6 +370,7 @@ img {
 }
 
 .social-wrapper {
+  padding: 25px;
   position: fixed;
   top: 0;
   left: 0;
@@ -378,12 +379,14 @@ img {
   box-sizing: border-box;
   visibility: hidden;
   opacity: 0;
+  overflow: auto;
   -webkit-animation: all 3s ease;
           animation: all 3s ease;
   -webkit-animation-delay: 250ms;
           animation-delay: 250ms;
   background-color: rgba(13, 13, 13, 0.6);
   z-index: 10;
+  display: none;
   justify-content: space-between;
   align-items: center;
   flex-direction: column;

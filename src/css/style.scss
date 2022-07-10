@@ -481,6 +481,9 @@ img {
 }
 
 .social-wrapper {
+
+    padding: 25px;
+
     position: fixed;
     top: 0;
     left: 0;
@@ -492,7 +495,7 @@ img {
     visibility: hidden;
     opacity: 0;
 
-    // overflow: auto;
+    overflow: auto;
 
     animation: all 3s ease;
     animation-delay: 250ms;
@@ -501,7 +504,7 @@ img {
 
     z-index: 10;
 
-    // display: flex;
+    display: none;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
