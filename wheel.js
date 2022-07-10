@@ -64,8 +64,10 @@
 
 
     const showModal = () => {
-        const modalForm = document.querySelector('.modal-wrapper');
-        modalForm.classList.add('show')
+        // const modalForm = document.querySelector('.modal-wrapper');
+        // modalForm.classList.add('show')
+        const modalSocial = document.querySelector('.modal-social');
+        modalSocial.classList.add('show')
 
         body.classList.add('noScroll')
     }
