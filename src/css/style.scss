@@ -172,8 +172,8 @@ img {
     height: 100%;
 
     box-sizing: border-box !important;
-    padding: 25px;
-    padding-top: 160px;
+    padding: 24px;
+    padding-top: 4%;
 
 
     overflow: auto;
@@ -195,8 +195,16 @@ img {
         background-color: #160D2A;
         box-sizing: border-box;
         width: 100%;
+        flex: 3;
+        margin-bottom: 10px;
+
+        
+        display: flex;
+        flex-direction: column;
+        // justify-content: space-between;
+
         // height: 60%;
-        height: fit-content;
+        // height: fit-content;
         // position: fixed;
 
         .form-title {
@@ -294,7 +302,13 @@ img {
 
         .form {
             width: 100%;
-            padding: 20px;
+            padding: 15px;
+
+            
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        justify-content: space-around;
             
             span {
                 font-family: 'Inter', sans-serif;
@@ -321,13 +335,13 @@ img {
             button {
                 width: 100%;
                 border: 0;
-                height: 55px;
+                height: 50px;
 
                 display: flex;
                 justify-content: center;
 
                 background-color: $red;
-                margin-bottom: 25px;
+                margin-bottom: 10px;
                 border-radius: 3px;
 
                 font-family: 'Inter', sans-serif;
@@ -468,14 +482,14 @@ img {
     }
 
     .downloads {
+        flex: 2;
         display: flex;
-        flex: 1;
         flex-direction: column;
 
         justify-content: space-evenly;
 
         a {
-            margin-top: 25px;
+            margin-bottom: 10px;
         }
     }
 }
@@ -587,6 +601,7 @@ img {
             justify-content: space-between;
             a {
                 padding: 15px;
+                flex: 1;
 
                 img {
                     height: 100%;
