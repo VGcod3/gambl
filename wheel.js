@@ -67,8 +67,8 @@
     }
 
     const showModal = () => {
-        modalForm.classList.add('show')
-        // modalSocial.classList.add('show')
+        // modalForm.classList.add('show')
+        modalSocial.classList.add('show')
 
         body.classList.add('noScroll')
     }
